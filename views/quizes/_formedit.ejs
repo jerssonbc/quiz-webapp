@@ -1,3 +1,46 @@
+<label for="tema" >Temática:</label>
+<select name="quiz[tema]">
+  <option value="tecnologia"
+      <% if(quiz.tema === "tecnologia") { %>
+        selected >
+      <% }else{%>
+        >
+      <%}%>
+    Tecnología
+  </option>
+  <option value="ciencia"
+    <% if(quiz.tema === "ciencia") { %>
+      selected>
+    <% }else{%>
+      >
+    <%}%>
+  Ciencia
+  </option>
+  <option value="humanidades"
+  <% if(quiz.tema === "humanidades") { %>
+    selected>
+  <% }else{%>
+    >
+  <%}%>
+  Humanidades</option>
+  <option value="ocio"
+    <% if(quiz.tema === "ocio") { %>
+      selected>
+    <% }else{%>
+      >
+    <%}%>
+  Ocio</option>
+  <option value="otro"
+    <% if(quiz.tema === "otro") { %>
+      selected>
+    <% }else{%>
+      >
+    <%}%>
+
+    Otro</option>
+</select>
+
+<br>
 <label for="preg" class="rem">Pregunta:</label>
 <input type="text" id="preg" name="quiz[pregunta]"
     placeholder="Ingrese su pregunta" value="<%= quiz.pregunta %>"/><br>

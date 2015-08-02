@@ -1,43 +1,25 @@
 <label for="tema" >Temática:</label>
 <select name="quiz[tema]">
   <option value="tecnologia"
-      <% if(quiz.tema === "tecnologia") { %>
-        selected >
-      <% }else{%>
-        >
-      <%}%>
-    Tecnología
+      <%= quiz.tema === "tecnologia" ? "selected":"" %>
+      >Tecnología
   </option>
   <option value="ciencia"
-    <% if(quiz.tema === "ciencia") { %>
-      selected>
-    <% }else{%>
-      >
-    <%}%>
-  Ciencia
+    <%= quiz.tema === "ciencia" ? "selected" : ""%>
+      >Ciencia
   </option>
   <option value="humanidades"
-  <% if(quiz.tema === "humanidades") { %>
-    selected>
-  <% }else{%>
-    >
-  <%}%>
-  Humanidades</option>
+  <%= quiz.tema === "humanidades" ? "selected" : ""%>
+    >Humanidades
+  </option>
   <option value="ocio"
-    <% if(quiz.tema === "ocio") { %>
-      selected>
-    <% }else{%>
-      >
-    <%}%>
-  Ocio</option>
+    <%= quiz.tema === "ocio" ? "selected" : ""%>
+      >Ocio
+  </option>
   <option value="otro"
-    <% if(quiz.tema === "otro") { %>
-      selected>
-    <% }else{%>
-      >
-    <%}%>
-
-    Otro</option>
+    <%= quiz.tema === "otro" ? "selected" : "" %>
+      >Otro
+  </option>
 </select>
 
 <br>
